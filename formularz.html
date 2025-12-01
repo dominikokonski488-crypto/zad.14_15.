@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Formularz Podania o Pracę</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+.kartka {
+  background-color: white;
+  width: 750px;
+  margin: 40px auto;
+  padding: 40px;
+  border: 1px solid #aaa;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  padding: 5px;
+  vertical-align: top;
+}
+.linie input[type=text] {
+  width: 95%;
+  border: 1px solid #aaa;
+  height: 25px;
+}
+.opis {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.pytania {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+.pytania td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+.pytania input[type=checkbox] {
+  transform: scale(1.2);
+  margin-right: 5px;
+}
+.przyciski {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+button {
+  width: 48%;
+  height: 35px;
+  font-size: 16px;
+}
+.reset {
+  background-color: #ddd;
+}
+.zatwierdz {
+  background-color: #ccc;
+}
+</style>
+</head>
+<body>
+
+<div class="kartka">
+  <h2>Formularz Podania o Pracę</h2>
+
+  <table class="linie">
+    <tr>
+      <td>Imię</td>
+      <td>Drugie Imię</td>
+      <td>Nazwisko</td>
+    </tr>
+    <tr>
+      <td><input type="text" name="imie"></td>
+      <td><input type="text" name="drugie"></td>
+      <td><input type="text" name="nazwisko"></td>
+    </tr>
+  </table>
+
+  <p><b>Napisz coś o sobie:</b></p>
+  <div>
+    <input type="text" class="opis"><br>
+    <input type="text" class="opis"><br>
+    <input type="text" class="opis"><br>
+    <input type="text" class="opis"><br>
+    <input type="text" class="opis"><br>
+  </div>
+
+  <table class="pytania">
+    <tr>
+      <td>Czy interesujesz się komputerami?</td>
+      <td><input type="checkbox">Tak <input type="checkbox">Nie</td>
+    </tr>
+    <tr>
+      <td>Czy lubisz programować?</td>
+      <td><input type="checkbox">Tak <input type="checkbox">Nie</td>
+    </tr>
+    <tr>
+      <td>Czy znasz język Python?</td>
+      <td><input type="checkbox">Tak <input type="checkbox">Nie</td>
+    </tr>
+    <tr>
+      <td>Czy potrafisz współpracować w zespole?</td>
+      <td><input type="checkbox">Tak <input type="checkbox">Nie</td>
+    </tr>
+    <tr>
+      <td>Czy chcesz rozwijać się w IT?</td>
+      <td><input type="checkbox">Tak <input type="checkbox">Nie</td>
+    </tr>
+    <tr>
+      <td>Czy potrafisz samodzielnie rozwiązywać problemy?</td>
+      <td><input type="checkbox">Tak <input type="checkbox">Nie</td>
+    </tr>
+    <tr>
+      <td>Czy uczysz się nowych rzeczy z internetu?</td>
+      <td><input type="checkbox">Tak <input type="checkbox">Nie</td>
+    </tr>
+  </table>
+
+  <p><b>Data urodzenia:</b> <input type="text" style="width:200px;"></p>
+
+  <p><b>Skontaktuj się z nami:</b><br>[Facebook] [YouTube] [X]</p>
+
+  <div class="przyciski">
+    <button type="reset" class="reset">Reset</button>
+    <button type="submit" class="zatwierdz">Zatwierdź</button>
+  </div>
+</div>
+
+</body>
+</html>

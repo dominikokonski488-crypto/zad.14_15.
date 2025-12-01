@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Index_Okoński</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .ramka {
+            border: 2px solid black;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .naglowek, .stopka {
+            text-align: center;
+            padding: 15px;
+            border-bottom: 2px solid black;
+        }
+        .stopka {
+            border-top: 2px solid black;
+            border-bottom: none;
+        }
+
+        .srodek {
+            display: flex;
+            height: 350px;
+        }
+        .lewe, .prawe {
+            width: 20%;
+            padding: 10px;
+            border-right: 2px solid black;
+        }
+        .prawe {
+            border-right: none;
+            border-left: 2px solid black;
+        }
+        .centrum {
+            width: 60%;
+            padding: 10px;
+            overflow: auto;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 310px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="ramka">
+
+    <!-- NAGŁÓWEK -->
+    <div class="naglowek">
+    <img src="logo.png" border=2 align=center>
+        <p>Gdańsk, 28.11.2025</p>
+    </div>
+
+    <!-- ŚRODEK STRONY -->
+    <div class="srodek">
+
+        <!-- LEWE MENU -->
+        <div class="lewe">
+            <b>lewe menu</b>
+            <ul>
+                <li><a href="https://zse.edu.gdansk.pl" target="ramka">Strona ZSE</a></li>
+                <li><a href="https://kuratorium.gda.pl" target="ramka">Kuratorium</a></li>
+            </ul>
+        </div>
+
+        <!-- CENTRUM – wczytywana strona -->
+        <div class="centrum">
+            <iframe name="ramka" src="https://zse.edu.gdansk.pl"></iframe>
+        </div>
+
+        <!-- PRAWE MENU -->
+        <div class="prawe">
+         <td width=18% align="center">
+<b>prawe menu</b>
+<ul>
+<li>
+<li><a href="file:///C:/Users/domin/Desktop/plik.html" target="ramka">Plik</a></li>
+</li>
+<li>
+<li><a href="file:///C:/Users/domin/Desktop/tabela.html" target="ramka">tabela</a></li>
+</li>
+<li>
+<li><a href="https://rawcdn.githack.com/dominikokonski488-crypto/1-7/refs/heads/main/formularz.html" target="ramka">Formularz</a></li>
+</li>
+<li>
+<li><a href="file:///C:/Users/domin/Desktop/gmail.html" target="ramka">Poczta</a></li>
+</li>
+<li>
+<li><a href="https://rawcdn.githack.com/dominikokonski488-crypto/1-7/refs/heads/main/1-7.html" target="ramka">Zad.1-6</a></li>
+</li>
+</ul>
+</td>
+        </div>
+    </div>
+    <!-- STOPKA -->
+    <div class="stopka">
+        <h3>STOPKA – Okoński</h3>
+        <p>Gdańsk, 28.11.2025</p>
+    </div>
+</div>
+</body>
+</html>
